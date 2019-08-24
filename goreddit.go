@@ -68,6 +68,6 @@ func main() {
 	fmt.Printf("/%s - %d threads\n", subreddit, len(t.Data.Children))
 
 	for _, c := range t.Data.Children {
-		fmt.Printf("%s [%d/%d]\n\n", c.Data.Title, c.Data.Ups, c.Data.Downs)
+		fmt.Printf("%s [%d]\n\n", c.Data.Title, c.Data.Ups)
 	}
 }
